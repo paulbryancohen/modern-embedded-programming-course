@@ -1,0 +1,124 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.39.0.0
+Copyright (C) 2023 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Paul Cohen
+NA
+User-based license: Keil MDK Community
+Valid until: May 31 2033. Cached until: Jan 8 2024
+ 
+Tool Versions:
+Toolchain:       Keil MDK Community  Version: 5.39.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.21
+Assembler:       Armasm.exe V6.21
+Linker/Locator:  ArmLink.exe V6.21
+Library Manager: ArmAr.exe V6.21
+Hex Converter:   FromElf.exe V6.21
+CPU DLL:         SARMCM3.DLL V5.39.0.0
+Dialog DLL:      DARMCM1.DLL V1.19.6.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.2.0.0
+Dialog DLL:      TARMCM1.DLL V1.14.6.0
+ 
+<h2>Project:</h2>
+D:\modern-embedded-programming-course\lesson-04\stm32c031-keil\lesson.uvprojx
+Project File Date:  01/01/2024
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.21', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
+Build target 'Debug'
+Note: source file '.\RTE\Device\STM32C031C6Tx\STCubeGenerated\Src\main.c' - object file renamed from '.\Objects\main.o' to '.\Objects\main_1.o'.
+linking...
+.\Objects\lesson.axf: Error: L6200E: Symbol main multiply defined (by main_1.o and main.o).
+.\Objects\lesson.axf: Error: L6200E: Symbol __ARM_use_no_argv multiply defined (by main_1.o and main.o).
+Not enough information to list image symbols.
+Not enough information to list load addresses in the image map.
+Finished: 2 information, 0 warning and 2 error messages.
+".\Objects\lesson.axf" - 2 Error(s), 0 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                https://www.keil.com/pack/ARM.CMSIS.6.0.0.pack
+                ARM::CMSIS@6.0.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 6.0.0
+
+Package Vendor: Keil
+                project-path/Keil.FrameworkCubeMX.1.0.0.pack
+                Keil::FrameworkCubeMX@1.0.0
+                STM32CubeMX generated pack description
+   * Component: STM32CubeMX Version: 1.1.0
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32C0xx_DFP.1.0.0.pack
+                Keil::STM32C0xx_DFP@1.0.0
+                STMicroelectronics STM32C0 Series Device Support
+   * Component: STM32Cube Framework Version: 1.1.0
+   * Component: Common Version: 1.0.0
+   * Component: Cortex Version: 1.0.0
+   * Component: EXTI Version: 1.0.0
+   * Component: Flash Version: 1.0.0
+   * Component: GPIO Version: 1.0.0
+   * Component: PWR Version: 1.0.0
+   * Component: RCC Version: 1.0.0
+   * Component: Startup Version: 1.0.0
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/Device/STM32C031C6Tx
+  ./RTE/Device/STM32C031C6Tx/STCubeGenerated
+  ./RTE/Device/STM32C031C6Tx/STCubeGenerated/Inc
+  ./RTE/_Debug
+  C:/Users/paulb/AppData/Local/arm/packs/ARM/CMSIS/6.0.0/CMSIS/Core/Include
+  C:/Users/paulb/AppData/Local/arm/packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/CMSIS/Device/ST/STM32C0xx/Include
+  C:/Users/paulb/AppData/Local/arm/packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/STM32C0xx_HAL_Driver/Inc
+  C:/Users/paulb/AppData/Local/arm/packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/STM32C0xx_HAL_Driver/Inc/Legacy
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ::Device:STM32Cube Framework(API)@1.1.0
+
+   * Component: ARM::CMSIS:CORE@6.0.0
+
+   * Component: Keil::Device:STM32Cube Framework:STM32CubeMX@1.1.0
+      Include file:  MX_Device.h
+      Include file:  STCubeGenerated/Inc/stm32c0xx_hal_conf.h
+      Source file:   STCubeGenerated/Src/stm32c0xx_hal_msp.c
+
+   * Component: Keil::Device:STM32Cube HAL:Common@1.0.0
+      Include file:  Drivers/STM32C0xx_HAL_Driver/Inc/stm32c0xx_hal.h
+      Source file:   Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal.c
+
+   * Component: Keil::Device:STM32Cube HAL:Cortex@1.0.0
+      Source file:   Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_cortex.c
+
+   * Component: Keil::Device:STM32Cube HAL:EXTI@1.0.0
+      Source file:   Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_exti.c
+
+   * Component: Keil::Device:STM32Cube HAL:Flash@1.0.0
+      Source file:   Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_flash.c
+      Source file:   Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_flash_ex.c
+
+   * Component: Keil::Device:STM32Cube HAL:GPIO@1.0.0
+      Source file:   Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_gpio.c
+
+   * Component: Keil::Device:STM32Cube HAL:PWR@1.0.0
+      Source file:   Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_pwr.c
+      Source file:   Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_pwr_ex.c
+
+   * Component: Keil::Device:STM32Cube HAL:RCC@1.0.0
+      Source file:   Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_rcc.c
+      Source file:   Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_rcc_ex.c
+
+   * Component: Keil::Device:Startup@1.0.0
+      Source file:   Drivers/CMSIS/Device/ST/STM32C0xx/Source/Templates/system_stm32c0xx.c
+      Source file:   Drivers/CMSIS/Device/ST/STM32C0xx/Source/Templates/arm/startup_stm32c031xx.s
+      Include file:  Drivers/CMSIS/Device/ST/STM32C0xx/Include/stm32c0xx.h
+Target not created.
+Build Time Elapsed:  00:00:00
+</pre>
+</body>
+</html>
